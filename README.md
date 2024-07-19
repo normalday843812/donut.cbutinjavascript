@@ -7,3 +7,7 @@ I basically just tried to learn as much as possible from [https://www.a1k0n.net/
 I first tried to make as much as possible myself, then began using the deobfuscated donut.c code for reference. After I finished making my code, I used [claude.ai](https://claude.ai/) to clean up the file and make the code to actually animate the donut in console.
 
 This was a fun project overall. It gave me a great introduction to some concepts I hadn't learned and javascript.
+
+Here's the donut (it took me so long to figure out how to make a gif that kinda looks like a full loop):
+
+![spinny donut](./assets/donut.gif)
