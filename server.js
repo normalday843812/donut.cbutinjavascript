@@ -1,9 +1,7 @@
-const thetaSpacing = 0.07; // Basically like the angle if you took a circle and then rotated it around an axis to form the donut shape, and the angle it he angle as you move it around the circle that forms the tube
-const phiSpacing = 0.02; // The angle as you move the circle that forms the tube around the axis
+const thetaSpacing = 0.07;
+const phiSpacing = 0.02;
 
 const screenSize = { width: 450, height: 100 };
-
-// ((R2+R1cosθ)cosϕ,R1sinθ,−(R2+R1cosθ)sinϕ)
 
 const R1 = 1; // Radius of tube of donut
 const R2 = 2; // Distance from center of donut to center of tube
@@ -23,9 +21,7 @@ function renderFrame(A, B) {
 
         for (let phi = 0; phi < 2 * Math.PI; phi += phiSpacing) {
             let cosPhi = Math.cos(phi), sinPhi = Math.sin(phi);
-            // x = (R2 + R1 cos(phi)) cos(theta)
             let circleX = R2 + R1 * cosPhi;
-            // y = wait I don't get the Y one yet lol
             let circleY = R1 * sinPhi;
 
             let x = circleX * (cosB * cosTheta + sinA * sinB * sinTheta) - circleY * cosA * sinB;
